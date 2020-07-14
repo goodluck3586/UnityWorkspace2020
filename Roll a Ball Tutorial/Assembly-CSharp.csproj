@@ -65,8 +65,13 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\GenerateCubes.cs" />
+    <Compile Include="Assets\Scripts\HideStageName.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\RestartScene.cs" />
     <Compile Include="Assets\Scripts\Rotator.cs" />
+    <Compile Include="Assets\Scripts\ShowTimeRecord.cs" />
+    <Compile Include="Assets\Scripts\StageTimer.cs" />
     <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\ExploderComponent.cs" />
     <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\LightComponent.cs" />
     <Compile Include="Assets\True Explosions\System\Scripts\effects\exploderComponents\ParticleComponent.cs" />
@@ -77,6 +82,7 @@
     <Compile Include="Assets\True Explosions\System\Scripts\exploders\Exploder.cs" />
     <Compile Include="Assets\True Explosions\System\Scripts\exploders\Exploder2D.cs" />
     <Compile Include="Assets\True Explosions\System\Scripts\exploders\SphereExploder.cs" />
+    <Compile Include="Assets\velocityTest.cs" />
     <None Include="Assets\True Explosions\System\Shaders\SphereVolumetricExplosion.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Repository/UnityWorkspace2020/Roll a Ball Tutorial/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

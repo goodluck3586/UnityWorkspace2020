@@ -58,9 +58,19 @@ public class PlayerController : MonoBehaviour
             score++;
             scoreText.text = $"Score : {score}";
             
+            // 모든 큐브를 제거하여 스테이지를 클리어 했을 때 실행되는 코드
             if(score == totalCountOfCubes)
             {
-                winText.text = "You Win!!!";
+                winText.text = "Stage Clear!!!";
+                GameManager.instance.LoadNextSceneLateTime(2f);
+
+                // 스테이지 클리어에 걸린 시간 가져와 저장하기
+                GameObject.Find("StageTimer").GetComponent<StageTimer>().isClearStage = true;
+
+                GameManager.instance.timeRecord +=
+                GameObject.Find("StageTimer").GetComponent<StageTimer>().t;
+
+                print($"지금까지 경과된 시간은 {GameManager.instance.timeRecord}초");
             }
         }
     }
